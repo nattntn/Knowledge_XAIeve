@@ -15,3 +15,25 @@ These findings demonstrate the potential of Knowledge XAIeve for generating nove
 The process begins with (1) preparing the dataset, followed by (2) developing a CNN model for task-specific functions.
 (3) Domain-specific visual explanations are generated for each prediction, and (4) salient regions are perturbed to assess their impact on model outputs. 
 (5) Statistical tests are then applied to validate the results, producing (6) verified, human-interpretable knowledge. 
+
+
+## :mega: News
+- [2027.7.31] Release a demo on [Colab]()
+
+- 
+## Contents
+- [Install](#install)
+- [Dataset](#dataset)
+- [Task-specific training](#model)
+- [Task specific visual explanation](#opg-shap)
+- [Discovering influential regions via perturbation](#perturbation)
+- [Statistical Verification](#statistic)
+
+## Getting Started
+
+### :hammer_and_wrench: Environment Installation <a href="#install" id="install"/>
+### :open_file_folder: Dataset <a href="#dataset" id="dataset"/>
+### :octocat: Task-specific training <a href="#model" id="model"/>
+### :loop: Task specific visual explanation <a href="#opg-shap" id="opg-shap"/>
+### :bulb: Discovering influential regions via perturbation <a href="#perturbation" id="perturbation"/>
+### :bar_chart: Statistical Verification <a href="#statistic" id="statistic"/>
