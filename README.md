@@ -32,8 +32,40 @@ The process begins with (1) preparing the dataset, followed by (2) developing a 
 ## Getting Started
 
 ### :hammer_and_wrench: Environment Installation <a href="#install" id="install"/>
+
+
 ### :open_file_folder: Dataset <a href="#dataset" id="dataset"/>
+
+
 ### :octocat: Task-specific training <a href="#model" id="model"/>
+The predictive backbone is **DeepToothDuo**, which utilizes an EfficientNetB0
+architecture pre-trained on ImageNet and fine-tuned for two tasks from panoramic radiographs.
+
+| Task | Metric | Result | 95% CI |
+|:---:|:---:|:---:|:---:|
+| Age estimation | RMSE | 1.96 years | — |
+| Sex classification | Accuracy | 87.38% | 85.1–89.3% |
+| Sex classification | Sensitivity | 87.61% | 84.3–90.3% |
+| Sex classification | Specificity | 87.16% | 83.8–89.9% |
+
+**BibTeX:**
+```
+@inproceedings{hirunchavarod2024deeptoothduo,
+  title={Deeptoothduo: Multi-task age-sex estimation and understanding via panoramic radiograph},
+  author={Hirunchavarod, Natthanich and Phuphatham, Pornnakanok and Sributsayakarn, Natnicha and Prathansap, Narawit and Pornprasertsuk-Damrongsri, Suchaya and Jirarattanasopha, Varangkanar and Intharah, Thanapong},
+  booktitle={2024 IEEE International Symposium on Biomedical Imaging (ISBI)},
+  pages={1--5},
+  year={2024},
+  organization={IEEE}
+}
+```
+
 ### :loop: Task specific visual explanation <a href="#opg-shap" id="opg-shap"/>
+
+
+
 ### :bulb: Discovering influential regions via perturbation <a href="#perturbation" id="perturbation"/>
+
+
+
 ### :bar_chart: Statistical Verification <a href="#statistic" id="statistic"/>
