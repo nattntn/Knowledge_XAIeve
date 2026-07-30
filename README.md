@@ -61,8 +61,21 @@ architecture pre-trained on ImageNet and fine-tuned for two tasks from panoramic
 ```
 
 ### :loop: Task specific visual explanation <a href="#opg-shap" id="opg-shap"/>
+This stage runs OPG-SHAP over the full test set, to highlight what regions the model finds important for each prediction.
 
+> OPG-SHAP is an explainable AI tool designed to interpret deep learning models used on panoramic radiographs.
+It combines YOLO object detection and SHAP (SHapley Additive exPlanations) values to automatically highlight the specific dental regions (out of 20 predefined anatomical regions) that influence an AI model's prediction.
 
+```
+@inproceedings{hirunchavarod2024opg,
+  title={Opg-shap: A dental ai tool for explaining learned orthopantomogram image recognition},
+  author={Hirunchavarod, Natthanich and Dangsungnoen, Lapatrada and Thongprasant, Kwansawan and Phuphatham, Pornnakanok and Prathansap, Narawit and Sributsayakarn, Natnicha and Pornprasertsuk-Damrongsri, Suchaya and Jirarattanasopha, Varangkanar and Intharah, Thanapong},
+  booktitle={2024 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)},
+  pages={1--6},
+  year={2024},
+  organization={IEEE}
+}
+```
 
 ### :bulb: Discovering influential regions via perturbation <a href="#perturbation" id="perturbation"/>
 
