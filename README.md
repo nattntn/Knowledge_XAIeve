@@ -10,3 +10,8 @@ Follow-up validation confirmed that sexual dimorphism in the upper third molar i
 These findings demonstrate the potential of Knowledge XAIeve for generating novel, biologically grounded hypotheses from CNN models trained on panoramic radiographs.
 
 ## Method Overview
+![image](assets/overview.png)
+**Figure 1.** Overview of the proposed framework for discovering knowledge from a trained AI model.
+The process begins with (1) preparing the dataset, followed by (2) developing a CNN model for task-specific functions.
+(3) Domain-specific visual explanations are generated for each prediction, and (4) salient regions are perturbed to assess their impact on model outputs. 
+(5) Statistical tests are then applied to validate the results, producing (6) verified, human-interpretable knowledge. 
