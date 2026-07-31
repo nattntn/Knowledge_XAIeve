@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+.DS_Store
+efficientnet_keras_transfer_learning/
+data/sample/

@@ -6,6 +6,7 @@ so perturbation via inpaint + resize
 with separate top-anchor (root) and bottom-anchor (crown) strategies.
 """
 
+from __future__ import annotations
 import cv2
 import numpy as np
 

@@ -5,7 +5,7 @@ Perturbation functions for the sex classification task.
 Applied via seamlessClone with an elliptical mask.
 Both mesiodistal width (scale_x) and total tooth length (scale_y) axes can be perturbed independently.
 """
-
+from __future__ import annotations
 import cv2
 import numpy as np
 

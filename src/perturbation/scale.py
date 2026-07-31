@@ -3,7 +3,7 @@ scale.py
 ---------------
 Generate perturbation scale factors used in these experiments.
 """
-
+from __future__ import annotations
 import numpy as np
  
  

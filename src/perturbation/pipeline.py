@@ -3,7 +3,7 @@ pipeline.py
 -----------
 run iterate over all images and scale factors
 """
-
+from __future__ import annotations
 import os
 import cv2
 import pandas as pd
@@ -67,7 +67,7 @@ def run_sex_perturbation(
             scale_x = float(s) if axis == "x" else 1.0
             scale_y = float(s) if axis == "y" else 1.0
 
-            edited, meta = apply_scale(
+            edited, meta = adjust_scale(
                 img=img,
                 x_center=float(row["x_center"]),
                 y_center=float(row["y_center"]),
