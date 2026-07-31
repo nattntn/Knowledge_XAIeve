@@ -1,0 +1,3 @@
+[submodule "external/OPG-SHAP"]
+	path = external/OPG-SHAP
+	url = https://github.com/nattntn/OPG-SHAP.git
