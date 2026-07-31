@@ -32,7 +32,9 @@ The process begins with (1) preparing the dataset, followed by (2) developing a 
 ## Getting Started
 
 ### :hammer_and_wrench: Environment Installation <a href="#install" id="install"/>
-
+```
+git clone --recurse-submodules https://github.com/nattntn/Knowledge_XAIeve.git
+```
 
 ### :open_file_folder: Dataset <a href="#dataset" id="dataset"/>
 

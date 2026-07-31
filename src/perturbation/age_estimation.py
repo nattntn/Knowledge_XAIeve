@@ -196,13 +196,20 @@ def adjust_crown(
     out[new_y:new_y + new_cr_h, x:x + w] = roi_rs
 
     # Recalculate crown polyline
+    # bottom_pt is the fixed anchor (bottom edge does NOT move — bottom-anchor resize),
+    # so it must stay unchanged. The new endpoint is found by intersecting the line
+    # with the NEW top edge of the resized crown box (new_y), the same way
+    # adjust_root() intersects with the new bottom edge. The previous version
+    # incorrectly shifted bottom_pt itself and used a fixed original length,
+    # which produced a line that did not match the actual resized box at all.
     p0, p1 = np.array(pts_cr[0]), np.array(pts_cr[1])
     bottom_pt = p0 if p0[1] > p1[1] else p1
     vec = (p1 - p0) / np.linalg.norm(p1 - p0)
-    start_cr = bottom_pt - np.array([0, new_cr_h - h])
-    end_cr = (start_cr - vec * orig_cr_len).astype(int)
-    new_cr_line = [start_cr.tolist(), end_cr.tolist()]
-    new_cr_len = float(np.linalg.norm(end_cr - start_cr))
+    target_y = new_y  # new top edge of the resized crown box
+    t = (target_y - bottom_pt[1]) / vec[1]
+    end_cr = (bottom_pt + vec * t).astype(int)
+    new_cr_line = [bottom_pt.tolist(), end_cr.tolist()]
+    new_cr_len = float(np.linalg.norm(end_cr - bottom_pt))
 
     # Recalculate distance-crown polyline
     end_dist = end_cr + np.array([0, orig_dist_cr_len], int)
