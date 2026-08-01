@@ -20,13 +20,13 @@ The process begins with (1) preparing the dataset, followed by (2) developing a 
 ## :mega: News
 - [2027.8.1] Release a demo on [Colab](https://colab.research.google.com/github/nattntn/Knowledge_XAIeve/blob/main/sex_pipeline.ipynb)
 
-- 
+
 ## Contents
 - [Install](#install)
 - [Dataset](#dataset)
 - [Task-specific training](#model)
 - [Task specific visual explanation](#opg-shap)
-- [Discovering influential regions via perturbation](#perturbation)
+<!---[Discovering influential regions via perturbation](#perturbation)-->
 - [Statistical Verification](#statistic)
 
 ## Getting Started
@@ -39,7 +39,14 @@ The process begins with (1) preparing the dataset, followed by (2) developing a 
 ```
 
 ### :open_file_folder: Dataset <a href="#dataset" id="dataset"/>
+The full dataset consists of **5,132 panoramic radiographs from 2,778 Thai
+patients aged 7–25 years**, collected at Mahidol University's Oral and
+Maxillofacial Radiology Clinic, the same patient cohort used in our earlier
+work, **DeepToothDuo** (see citation below).
 
+**Full dataset access.** Due to patient privacy and IRB restrictions, the
+complete dataset cannot be publicly released. A small subset of de-identified
+sample images is included via the `OPG-SHAP`submodule for demonstration purposes: [data](https://github.com/nattntn/OPG-SHAP/tree/main/images)
 
 ### :octocat: Task-specific training <a href="#model" id="model"/>
 The predictive backbone is **DeepToothDuo**, which utilizes an EfficientNetB0
@@ -81,7 +88,7 @@ It combines YOLO object detection and SHAP (SHapley Additive exPlanations) value
 }
 ```
 
-### :bulb: Discovering influential regions via perturbation <a href="#perturbation" id="perturbation"/>
+<!--### :bulb: Discovering influential regions via perturbation <a href="#perturbation" id="perturbation"/>-->
 
 
 
