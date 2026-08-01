@@ -12,6 +12,7 @@ These findings demonstrate the potential of Knowledge XAIeve for generating nove
 If you use this framework, please cite our manuscript (currently under
 review at *Scientific Reports*):
 
+**BibTeX:**
 ```bibtex
 @article{hirunchavarod2026knowledgexaieve,
   title={Knowledge XAIeve: A framework for discovering knowledge in panoramic radiographs through task-specific explainable AI and sample perturbation techniques---A Case Study of the Thai Population Aged 7--25},
@@ -89,6 +90,7 @@ This stage runs OPG-SHAP over the full test set, to highlight what regions the m
 > OPG-SHAP is an explainable AI tool designed to interpret deep learning models used on panoramic radiographs.
 It combines YOLO object detection and SHAP (SHapley Additive exPlanations) values to automatically highlight the specific dental regions (out of 20 predefined anatomical regions) that influence an AI model's prediction.
 
+**BibTeX:**
 ```bibtex
 @inproceedings{hirunchavarod2024opg,
   title={Opg-shap: A dental ai tool for explaining learned orthopantomogram image recognition},
