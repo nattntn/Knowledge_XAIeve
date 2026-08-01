@@ -18,7 +18,7 @@ The process begins with (1) preparing the dataset, followed by (2) developing a 
 
 
 ## :mega: News
-- [2027.7.31] Release a demo on [Colab]()
+- [2027.8.1] Release a demo on [Colab](https://colab.research.google.com/github/nattntn/Knowledge_XAIeve/blob/main/sex_pipeline.ipynb)
 
 - 
 ## Contents
@@ -33,7 +33,9 @@ The process begins with (1) preparing the dataset, followed by (2) developing a 
 
 ### :hammer_and_wrench: Environment Installation <a href="#install" id="install"/>
 ```
-git clone --recurse-submodules https://github.com/nattntn/Knowledge_XAIeve.git
+!git clone --recurse-submodules https://github.com/nattntn/Knowledge_XAIeve.git
+%cd Knowledge_XAIeve
+!pip install -r external/OPG-SHAP/requirements.txt
 ```
 
 ### :open_file_folder: Dataset <a href="#dataset" id="dataset"/>
@@ -84,3 +86,11 @@ It combines YOLO object detection and SHAP (SHapley Additive exPlanations) value
 
 
 ### :bar_chart: Statistical Verification <a href="#statistic" id="statistic"/>
+> :chart_with_upwards_trend: **Age estimation**: [Colab](https://colab.research.google.com/github/nattntn/Knowledge_XAIeve/blob/main/lmm_age.ipynb)
+
+> :statue_of_liberty: **Sex prediction**:
+> - Upper canine: [Colab](https://colab.research.google.com/github/nattntn/Knowledge_XAIeve/blob/main/lmm_sex_upper_canine.ipynb)
+> - Upper third molar: [Colab](https://colab.research.google.com/github/nattntn/Knowledge_XAIeve/blob/main/lmm_sex_upper_third_molar.ipynb)
+
+> :rocket: **Sex validation**: [Colab](https://colab.research.google.com/github/nattntn/Knowledge_XAIeve/blob/main/lmm_sex_upper_third_molar_validation.ipynb)
+
