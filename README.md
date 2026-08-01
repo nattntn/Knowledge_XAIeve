@@ -9,6 +9,18 @@ The framework reaffirmed the lower third molar as the primary predictor for age 
 Follow-up validation confirmed that sexual dimorphism in the upper third molar is driven primarily by root rather than crown dimensions.
 These findings demonstrate the potential of Knowledge XAIeve for generating novel, biologically grounded hypotheses from CNN models trained on panoramic radiographs.
 
+If you use this framework, please cite our manuscript (currently under
+review at *Scientific Reports*):
+
+```bibtex
+@article{hirunchavarod2026knowledgexaieve,
+  title={Knowledge XAIeve: A framework for discovering knowledge in panoramic radiographs through task-specific explainable AI and sample perturbation techniques---A Case Study of the Thai Population Aged 7--25},
+  author={Hirunchavarod, Natthanich and Sributsayakarn, Natnicha and Pornprasertsuk-Damrongsri, Suchaya and Jirarattanasopha, Varangkanar and Intharah, Thanapong},
+  journal={ },
+  note={Manuscript submitted for publication},
+  year={ }
+}
+```
 ## Method Overview
 ![image](assets/overview.png)
 **Figure 1.** Overview of the proposed framework for discovering knowledge from a trained AI model.
@@ -60,7 +72,7 @@ architecture pre-trained on ImageNet and fine-tuned for two tasks from panoramic
 | Sex classification | Specificity | 87.16% | 83.8–89.9% |
 
 **BibTeX:**
-```
+```bibtex
 @inproceedings{hirunchavarod2024deeptoothduo,
   title={Deeptoothduo: Multi-task age-sex estimation and understanding via panoramic radiograph},
   author={Hirunchavarod, Natthanich and Phuphatham, Pornnakanok and Sributsayakarn, Natnicha and Prathansap, Narawit and Pornprasertsuk-Damrongsri, Suchaya and Jirarattanasopha, Varangkanar and Intharah, Thanapong},
@@ -77,7 +89,7 @@ This stage runs OPG-SHAP over the full test set, to highlight what regions the m
 > OPG-SHAP is an explainable AI tool designed to interpret deep learning models used on panoramic radiographs.
 It combines YOLO object detection and SHAP (SHapley Additive exPlanations) values to automatically highlight the specific dental regions (out of 20 predefined anatomical regions) that influence an AI model's prediction.
 
-```
+```bibtex
 @inproceedings{hirunchavarod2024opg,
   title={Opg-shap: A dental ai tool for explaining learned orthopantomogram image recognition},
   author={Hirunchavarod, Natthanich and Dangsungnoen, Lapatrada and Thongprasant, Kwansawan and Phuphatham, Pornnakanok and Prathansap, Narawit and Sributsayakarn, Natnicha and Pornprasertsuk-Damrongsri, Suchaya and Jirarattanasopha, Varangkanar and Intharah, Thanapong},
